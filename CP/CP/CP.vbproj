@@ -72,21 +72,22 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1\Agregar.Designer.vb">
+    <Compile Include="CL\Gestor.vb" />
+    <Compile Include="UI\Agregar.Designer.vb">
       <DependentUpon>Agregar.vb</DependentUpon>
     </Compile>
-    <Compile Include="1\Agregar.vb">
+    <Compile Include="UI\Agregar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="1\BDJaguarDataSet.Designer.vb">
+    <Compile Include="UI\BDJaguarDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BDJaguarDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="1\Jaguar.vb">
+    <Compile Include="UI\Jaguar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="1\Jaguar.Designer.vb">
+    <Compile Include="UI\Jaguar.Designer.vb">
       <DependentUpon>Jaguar.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -105,18 +106,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="1\Ver.Designer.vb">
+    <Compile Include="UI\Ver.Designer.vb">
       <DependentUpon>Ver.vb</DependentUpon>
     </Compile>
-    <Compile Include="1\Ver.vb">
+    <Compile Include="UI\Ver.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="1\Agregar.resx">
+    <EmbeddedResource Include="UI\Agregar.resx">
       <DependentUpon>Agregar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="1\Jaguar.resx">
+    <EmbeddedResource Include="UI\Jaguar.resx">
       <DependentUpon>Jaguar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -125,21 +126,21 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="1\Ver.resx">
+    <EmbeddedResource Include="UI\Ver.resx">
       <DependentUpon>Ver.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="1\App.config" />
-    <None Include="1\BDJaguarDataSet.xsc">
+    <None Include="UI\App.config" />
+    <None Include="UI\BDJaguarDataSet.xsc">
       <DependentUpon>BDJaguarDataSet.xsd</DependentUpon>
     </None>
-    <None Include="1\BDJaguarDataSet.xsd">
+    <None Include="UI\BDJaguarDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>BDJaguarDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="1\BDJaguarDataSet.xss">
+    <None Include="UI\BDJaguarDataSet.xss">
       <DependentUpon>BDJaguarDataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
@@ -151,6 +152,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ABD\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
