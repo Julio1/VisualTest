@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CP", "CP\CP.vbproj", "{E4267615-B338-4807-92AA-56DE7B0DFF14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CP", "CP", "{8CCDA3E4-3818-4A97-B327-108626AE5EBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CL", "CL", "{C44339FD-ADB4-4461-A983-899F5857CE5C}"
+	ProjectSection(SolutionItems) = preProject
+		Gestor.vb = Gestor.vb
+		MultiAmigo.vb = MultiAmigo.vb
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4267615-B338-4807-92AA-56DE7B0DFF14}.Debug|x86.ActiveCfg = Debug|x86
+		{E4267615-B338-4807-92AA-56DE7B0DFF14}.Debug|x86.Build.0 = Debug|x86
+		{E4267615-B338-4807-92AA-56DE7B0DFF14}.Release|x86.ActiveCfg = Release|x86
+		{E4267615-B338-4807-92AA-56DE7B0DFF14}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4267615-B338-4807-92AA-56DE7B0DFF14} = {8CCDA3E4-3818-4A97-B327-108626AE5EBF}
+	EndGlobalSection
+EndGlobal
