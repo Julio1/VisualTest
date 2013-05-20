@@ -31,38 +31,43 @@ Partial Class Agregar
         '
         'nombreTxt
         '
+        Me.nombreTxt.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nombreTxt.Location = New System.Drawing.Point(244, 108)
         Me.nombreTxt.Name = "nombreTxt"
-        Me.nombreTxt.Size = New System.Drawing.Size(200, 20)
+        Me.nombreTxt.Size = New System.Drawing.Size(200, 25)
         Me.nombreTxt.TabIndex = 0
         '
         'fechaNascTdp
         '
+        Me.fechaNascTdp.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fechaNascTdp.Location = New System.Drawing.Point(244, 167)
         Me.fechaNascTdp.Name = "fechaNascTdp"
-        Me.fechaNascTdp.Size = New System.Drawing.Size(200, 20)
+        Me.fechaNascTdp.Size = New System.Drawing.Size(200, 25)
         Me.fechaNascTdp.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(167, 111)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(57, 17)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Nombre"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(93, 167)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(118, 13)
+        Me.Label2.Size = New System.Drawing.Size(142, 17)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Fecha de Nascimientos"
         '
         'Registrar
         '
+        Me.Registrar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Registrar.Location = New System.Drawing.Point(244, 227)
         Me.Registrar.Name = "Registrar"
         Me.Registrar.Size = New System.Drawing.Size(133, 23)
