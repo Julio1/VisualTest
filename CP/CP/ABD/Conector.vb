@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data.Sql
+Imports System.Data.SqlTypes
 
 Public Class Conector
 
@@ -13,7 +14,7 @@ Public Class Conector
 
             Console.WriteLine("State: {0}", connection.State)
             Console.WriteLine("ConnectionString: {0}", _
-                connection.ConnectionString)
+                    connection.ConnectionString)
         End Using
     End Sub
 
@@ -29,16 +30,15 @@ Public Class Conector
 
     Public Sub ejecutarSQL(ByVal slq As String)
 
+
         Dim connection As New SqlConnection(GetConnectionString())
-        OpenSqlConnection()
+        connection.Open()
         Try
             Dim cmd As New SqlCommand(slq, connection)
             cmd.ExecuteNonQuery()
         Catch ex As Exception
 
         End Try
-
-
 
     End Sub
 

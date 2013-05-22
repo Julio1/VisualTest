@@ -40,6 +40,7 @@ Partial Class Agregar
         'fechaNascTdp
         '
         Me.fechaNascTdp.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fechaNascTdp.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.fechaNascTdp.Location = New System.Drawing.Point(244, 167)
         Me.fechaNascTdp.Name = "fechaNascTdp"
         Me.fechaNascTdp.Size = New System.Drawing.Size(200, 25)

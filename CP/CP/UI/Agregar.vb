@@ -13,7 +13,7 @@ Public Class Agregar
     Private Sub Registrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Registrar.Click
 
         Dim nombre As String = nombreTxt.Text
-        Dim fechaNasc As Date = fechaNascTdp.Value
+        Dim fechaNasc = fechaNascTdp.Value
 
         Dim miGestor As Gestor = New Gestor()
 
