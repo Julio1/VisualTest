@@ -43,5 +43,51 @@ Public Class Conector
     End Sub
 
 
+    'Function ejecutarSQLListar(ByVal sql As String) As SqlDataReader
+
+    '    Dim reader As SqlDataReader
+    '    Dim connection As New SqlConnection(GetConnectionString())
+    '    connection.Open()
+    '    Dim cmd As New SqlCommand()
+    '    cmd.CommandText = sql
+    '    Try
+
+
+    '        If cmd.Connection.State = ConnectionState.Closed Then
+    '            cmd.Connection.Open()
+    '        End If
+
+    '        reader = cmd.ExecuteReader
+    '    Catch ex As Exception
+
+    '    End Try
+
+    '    Return reader
+    'End Function
+
+    Public Function ejecutarSQLListar(ByVal pSQL As String) As IDataReader
+        Dim cmd As SqlCommand
+        Dim connection As New SqlConnection(GetConnectionString())
+
+        'se crea el comando
+        cmd = New SqlCommand
+        cmd.Connection = connection
+        'se sacan los parámetros
+
+        cmd.CommandText = pSQL
+
+        'si la conexión no está abierta, se abre
+        If cmd.Connection.State = ConnectionState.Closed Then
+            cmd.Connection.Open()
+        End If
+
+        Dim miReader As SqlDataReader = cmd.ExecuteReader()
+
+
+        Return miReader
+        'Cierra la conexion
+        cmd.Connection.Close()
+    End Function
+
 
 End Class

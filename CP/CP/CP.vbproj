@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="ABD\Conector.vb" />
     <Compile Include="CL\Gestor.vb" />
+    <Compile Include="CL\Amigo.vb" />
     <Compile Include="UI\Agregar.Designer.vb">
       <DependentUpon>Agregar.vb</DependentUpon>
     </Compile>
